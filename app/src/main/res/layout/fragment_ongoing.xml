@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whilte_background"
+    tools:context=".Fragment.OngoingOrderFragment">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/onGoingRecyclerView"
+            android:layout_width="match_parent"
+            tools:listitem="@layout/ongoing_order_list"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="52dp"/>
+
+
+    <ImageView
+        android:id="@+id/img_dataNotFound"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250sdp"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:src="@drawable/data_not_available"/>
+
+    <ProgressBar
+        android:id="@+id/mainProgressbar"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

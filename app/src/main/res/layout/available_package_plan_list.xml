@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/_10sdp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/corner_back">
+
+        <ImageView
+            android:id="@+id/img_plan"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/ic_orange_star" />
+
+        <TextView
+            android:id="@+id/txt_serviceName"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="AC"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No of\n Free Srevices"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/packagePlayRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/available_package_plan_service_list">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+</LinearLayout>

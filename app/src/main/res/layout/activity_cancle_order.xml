@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.CancleOrderActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@color/white">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_2sdp"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/back_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="8dp"
+                            android:padding="@dimen/_5sdp"
+                            android:src="@drawable/back"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="@dimen/_8sdp"
+                            android:text="Cancel Order?"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Help us to understand the reason"
+                        android:layout_marginLeft="@dimen/_55sdp"
+                        android:textSize="12sp"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_24sdp"
+                            android:paddingHorizontal="@dimen/_8sdp"
+                            android:textSize="12sp"
+                            android:text="Wrong Service Selected"/>
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_24sdp"
+                            android:paddingHorizontal="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:textSize="12sp"
+                            android:text="Wrong Address"/>
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_24sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:paddingHorizontal="@dimen/_8sdp"
+                            android:textSize="12sp"
+                            android:text="Other"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="@dimen/_38sdp"
+                        android:layout_marginRight="@dimen/_38sdp"
+                        android:layout_marginTop="@dimen/_20sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:layout_marginBottom="@dimen/_2sdp"
+                            android:text="For other reason"/>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:elevation="@dimen/_10sdp"
+                            android:layout_margin="@dimen/_2sdp"
+                            app:cardCornerRadius="@dimen/_8sdp"
+                            android:background="@drawable/whilte_background">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_100sdp"
+                                android:text="For other reason"
+                                android:gravity="start"
+                                android:padding="@dimen/_4sdp"
+                                android:textSize="12sp"
+                                android:background="@null"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_gravity="right"
+                            android:gravity="center">
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:elevation="@dimen/_10sdp"
+                                android:layout_margin="@dimen/_2sdp"
+                                app:cardCornerRadius="@dimen/_50sdp"
+                                android:background="@drawable/whilte_background">
+
+                                <TextView
+                                    android:id="@+id/txt_cancleOrder"
+                                    android:layout_width="120dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Cancel Order"
+                                    android:gravity="center"
+                                    android:paddingRight="@dimen/_16sdp"
+                                    android:paddingBottom="@dimen/_6sdp"
+                                    android:paddingTop="@dimen/_6sdp"
+                                    android:paddingLeft="@dimen/_16sdp"
+                                    android:background="@drawable/cancle_background"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp"/>
+
+                            </androidx.cardview.widget.CardView>
+
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

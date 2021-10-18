@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "415579039477",
+    "project_id": "dailypit-82f3d",
+    "storage_bucket": "dailypit-82f3d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:415579039477:android:a7fcecaea44ce26a4187bc",
+        "android_client_info": {
+          "package_name": "com.dailypit.dp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "415579039477-kje9shcmn39m26u8f1j156mbturc59gq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBofUR59X-S4A2SGwxNl1Vi69kmBJL2pfA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "415579039477-kje9shcmn39m26u8f1j156mbturc59gq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

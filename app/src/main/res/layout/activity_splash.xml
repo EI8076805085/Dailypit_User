@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/user_app_splash_screen"
+    tools:context=".Activity.Splash">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_125sdp"
+        android:id="@+id/icon"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:src="@drawable/dailypit_user_icon"/>
+    
+
+</LinearLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dailypit.dp">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission. ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Dailypit"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup">
+        <activity android:name=".Activity.PackageChildServiceActivity"/>
+        <activity android:name=".Activity.BookPackageServiceActivity"/>
+        <activity android:name=".Activity.PackageDetailActivity"/>
+        <activity android:name=".Activity.MemberShip"/>
+        <activity android:name=".Activity.YourActivityMembershipPlanDetails"/>
+        <activity android:name=".Activity.MemberShipPlanDetails"/>
+        <activity android:name=".Activity.Howitwork"/>
+        <activity android:name=".Activity.RescheduleOrderActivity"/>
+        <activity android:name=".Activity.CancleOrderActivity"/>
+        <activity android:name=".Activity.WebviewActivity"/>
+        <activity android:name=".Activity.SearchActivity"/>
+        <activity android:name=".Activity.FavouriteServiceActivity"/>
+        <activity android:name=".Activity.SubCategoryActivity"/>
+        <activity android:name=".Activity.SelectPaymentMethod"/>
+        <activity android:name=".Activity.AllTransaction"/>
+        <activity android:name=".Activity.ShowCoupon"/>
+        <activity android:name=".Activity.Contact_Us"/>
+        <activity android:name=".Activity.AboutUs"/>
+        <activity android:name=".Activity.PrivacyAndPolicies"/>
+        <activity android:name=".Activity.TermAndCondition"/>
+        <activity android:name=".Activity.AllServiceActivity"/>
+        <activity android:name=".Activity.Help"/>
+        <activity android:name=".Activity.UpdateUserProfile"/>
+        <activity android:name=".Activity.OrderPlaced"/>
+        <activity android:name=".Activity.OrderAssignTo"/>
+        <activity android:name=".Activity.ApplyCoupon"/>
+        <activity android:name=".Activity.ProceedPay"/>
+        <activity android:name=".Activity.OTPScreen"/>
+        <activity android:name=".Activity.UpdateAddress"/>
+        <activity android:name=".Activity.AddNewAddress"/>
+        <activity android:name=".Activity.Address"/>
+        <activity android:name=".Activity.Notification"/>
+        <activity android:name=".Activity.ServiceAcitvity"/>
+        <activity android:name=".Activity.Login"/>
+        <activity android:name=".Activity.SignUp"/>
+        <activity android:name=".Activity.IntroPage"/>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".Activity.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <service android:name=".Utils.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".Activity.SmsReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAybaPB0K-wPVdxXShejtgBq-3fYsfGyrU"/>
+
+        <!-- AIzaSyCj5WGgTY1Hx72OdHXJV-wyKzWzusm5a9s -->
+        <!-- //AIzaSyA7WMIumwoeVeYfUM5_Y0t1WcIK16QeqcQ -->
+        <!-- AIzaSyAybaPB0K-wPVdxXShejtgBq-3fYsfGyrU -->
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_XdTqwVBr7cb60M"/>
+
+        <!-- rzp_test_XdTqwVBr7cb60M   // rzp_live_Jq35cawO0UkXht -->
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <meta-data
+            android:name="com.facebook.sdk.CodelessDebugLogEnabled"
+            android:value="true"/>
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"/>
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="@string/fb_login_protocol_scheme"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

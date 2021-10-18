@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/homeFragment">
+
+    <!--In the label field of fragment you can give the name that you want to show in the toolbar-->
+
+    <fragment
+        android:id="@+id/myProfile"
+        android:name="com.dailypit.dp.Fragment.MyProfileFragment"
+        tools:layout="@layout/fragment_my_profile">
+
+        <action
+            android:id="@+id/action_homeFragment_to_refundAndEarn"
+            app:destination="@id/refundAndEarn"/>
+
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/refundAndEarn"
+        android:name="com.dailypit.dp.Fragment.RefundandEarnFragment"
+        tools:layout="@layout/fragment_refundand_earn">
+
+        <action
+            android:id="@+id/action_homeFragment_to_refundAndEarn"
+            app:destination="@id/wallet"/>
+
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.dailypit.dp.Fragment.HomeFragment"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_homeFragment_to_myOrder"
+            app:destination="@id/myOrder"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/myOrder"
+        android:name="com.dailypit.dp.Fragment.MyOrderFragment"
+        tools:layout="@layout/fragment_my_order">
+
+        <action
+            android:id="@+id/action_homeFragment_to_myProfile"
+            app:destination="@id/myProfile"/>
+
+    </fragment>
+
+
+        <fragment
+            android:id="@+id/wallet"
+            android:name="com.dailypit.dp.Fragment.Wallet"
+            tools:layout="@layout/fragment_wallet" >
+            <action
+                android:id="@+id/action_homeFragment_to_wallet"
+                app:destination="@id/wallet" />
+
+        </fragment>
+
+
+</navigation>

@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Dailypit</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="sign_up">SIGNUP</string>
+    <string name="login">LOGIN</string>
+    <string name="fullname">Full Name</string>
+    <string name="mobile">Mobile Number</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="already_have_annaccount">Already have an Account?</string>
+    <string name="log_in">Log In</string>
+    <string name="signup">Sign Up</string>
+    <string name="signup_discriptopn">Enter your name and mobile number, we will sent an OTP to create your account</string>
+    <string name="login_discriptopn"> Enter your registered mobile number, we will send an OTP to verify your account</string>
+    <string name="notification">Notification</string>
+    <string name="ongoing">Ongoing</string>
+    <string name="complete">Complete</string>
+    <string name="myorder">My Orders</string>
+    <string name="date">12 JAN 2020</string>
+    <string name="time">12.00.AM</string>
+    <string name="order_status">Order Placed</string>
+    <string name="service_details">SERVICE DETAILS</string>
+    <string name="order_id">Order id: 123456789</string>
+    <string name="txt_date">Date</string>
+    <string name="txt_time">Time</string>
+    <string name="total_item">Total Item</string>
+    <string name="total_money"> 1760.00</string>
+    <string name="discount"> Discount</string>
+    <string name="coupon_applied"> Coupon Applied</string>
+    <string name="discount_money"> -10.00</string>
+    <string name="total_amount"> TOTAL AMOUNT</string>
+    <string name="home"> Home</string>
+    <string name="contact_details"> Contact Detail</string>
+    <string name="edit"> Edit</string>
+    <string name="name"> Name :</string>
+    <string name="mobile_number"> Mobile Number :</string>
+    <string name="email"> Email :</string>
+    <string name="address"> Address :</string>
+    <string name="add_address"> ADD ADDRESS</string>
+    <string name="defaul"> Default</string>
+    <string name="fill_field"> Fill the given blank fields</string>
+    <string name="save_as"> Save As</string>
+    <string name="mark_as_defoult"> Mark as default Address</string>
+    <string name="work"> Work</string>
+    <string name="other"> Other</string>
+    <string name="save_address"> Save Address</string>
+    <string name="update_address"> Update Home Address</string>
+    <string name="to_pay"> To Pay </string>
+    <string name="Permission_Granted">Permission Granted</string>
+    <string name="Permission_Denied">Permission Denied</string>
+    <string name="NOCONN">Please check your internet connection.</string>
+    <string name="delete_address"> You have delete your order placed address</string>
+    <string name="term"><![CDATA[Terms & Conditions]]></string>
+    <string name="privacy">Privacy Policies</string>
+    <string name="how_it_work"> How it Work</string>
+    <string name="multidiscount">Multiple Service Discount</string>
+    <string name="garb_discount">Best available offers on this service. </string>
+    <string name="facebook_app_id">914893892027103</string>
+    <string name="fb_login_protocol_scheme">fb914893892027103</string>
+    <string name="refer"><![CDATA[Refer & Earn]]></string>
+    <string name="subscritption"><![CDATA[Subscribe Membership & Packages,]]></string>
+
+    <string name="confirem_servise">  <b> Dailypit Genie </b> will reach your address for the booked Order within 2 hour  </string>
+    <string name="add_service_text">  <b> Your Dailypit Genie </b> want to add more service to your booked Order </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
